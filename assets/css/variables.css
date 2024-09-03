@@ -1,0 +1,11 @@
+@import 'reset.css';
+:root {
+  --primary-color: #0A1128;
+  --white-color: #FFFFFF;
+  --light-gray-color: #EEEEEE;
+  --secondary-color: crimson;
+  --gap: 3rem;
+  --gray-color: #dbd9d9;
+  --gold-color:   #b49049;
+  --blue-color: #000066;
+}

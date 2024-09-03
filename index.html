@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/menu.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+
+  <title>Portfolio</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero">
+            <div class="logo-container">
+              <img class="logo-img" src="assets/img/logo png.png" alt="img">
+            </div>
+          </a>
+        </div>
+        <div class="nav-list">
+          <ul id="nav-items">
+            <li><a href="#hero" data-after="Home">Home</a></li>
+            <li><a href="#AreasOfExpertise" data-after="Areas Of Expertise">Áreas de Atuação</a></li>
+            <li><a href="#about" data-after="About">Sobre</a></li>
+            <li><a href="#feedbacks" data-after="Feedbacks">Feedbacks</a></li>
+            <li><a href="#footer" data-after="Footer">Contato</a></li>
+          </ul>
+        </div>
+
+        <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+        <label class="close-menu-label" for="close-menu" title="close menu"></label>
+
+        <aside class="menu">
+          <div class="main-content menu-content">
+            <nav>
+              <ul id="menu-items" onclick="document.getElementById('close-menu').checked = false;">
+
+              </ul>
+            </nav>
+          </div>
+        </aside>
+
+        <script>
+
+          const navItems = document.getElementById('nav-items').cloneNode(true);
+          const menuItems = document.getElementById('menu-items');
+
+
+          const itemTexts = ['Home', 'Áreas de Atuação', 'Sobre', 'Feedbacks', 'Footer'];
+          const listItems = navItems.getElementsByTagName('li');
+
+          for (let i = 0; i < listItems.length; i++) {
+            const link = listItems[i].getElementsByTagName('a')[0];
+            link.textContent = itemTexts[i];
+          }
+
+          menuItems.appendChild(navItems);
+        </script>
+
+
+      </div>
+    </div>
+
+  </section>
+  <!-- End Header -->
+
+
+  <!-- Hero Section  -->
+  <section id="hero">
+    <div class="hero container">
+      <div>
+        <h1>Dr. Emanuel Dantas </h1>
+        <h1> Atuação Especializada em </h1>
+        <h1>Direito Previdenciário</h1>
+        <a href="https://wa.me/55?text=Ol%C3%A1%2C+gostaria+de+um+or%C3%A7amento+para+..." type="button"
+          class="cta">Fale Conosco</a>
+
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section  -->
+
+  <!-- Service Section -->
+  <section id="AreasOfExpertise">
+    <div class="main-content">
+      <h1>Direito Previdenciário</h1>
+      <br>
+      <br>
+
+      <div class="grid">
+        <div class="personalized-card2 ">
+          <p><strong>Benefício de prestação continuada (BPC)</strong></p>
+          <br>
+          <p class="p-detail"> Mais detalhes aqui!</p>
+          <br>
+          <p class="hidden-paragraph">
+            - Benefício concedido à pessoa com deficiência (Física, Mental, Intelectual,
+            Sensorial) ou idoso com 65 anos ou mais.<br>
+            - Necessidade de comprovar miserabilidade econômica, nos termos da lei.<br>
+            - Experiência em casos com pessoas com Transtorno do Espectro Autista (TEA).<br>
+          </p>
+
+        </div>
+        <div class="personalized-card2 ">
+          <p><strong>Benefícios por incapacidade temporária ou permanente</strong></p>
+          <br>
+          <p class="p-detail"> Mais detalhes aqui!</p>
+          <br>
+          <p class="hidden-paragraph"> - Incapacidade temporária em decorrência de acidente ou doença.
+          </p>
+
+        </div>
+        <div class="personalized-card2 ">
+          <p><strong>Aposentadoria</strong></p>
+          <br>
+          <p class="p-detail"> Mais detalhes aqui!</p>
+          <br>
+          <p class="hidden-paragraph"> - por idade (urbana e rural).
+            - por tempo de contribuição.
+            - especial.
+            - por invalidez condição clínica irreversível, com a consequente impossibilidade de
+            retorno às atividades laborais de forma definitiva..
+            - do professor.
+          </p>
+
+        </div>
+        <div class="personalized-card2 ">
+          <p><strong>Planejamento Previdenciário</strong></p>
+          <br>
+          <p class="p-detail"> Mais detalhes aqui!</p>
+          <br>
+          <p class="hidden-paragraph">- estudo individualizado.
+            - metodologia estratégica.
+            - melhor momento e forma de requerer sua aposentadoria.
+          </p>
+
+        </div>
+        <div class="personalized-card2 ">
+          <p><strong>Pensão por Morte</strong></p>
+          <br>
+          <p class="p-detail"> Mais detalhes aqui!</p>
+          <br>
+          <p class="hidden-paragraph">- destinada aos dependentes do segurado falecido, como cônjuges, filhos, pais e
+            irmãos.
+          </p>
+
+        </div>
+        <div class="personalized-card2 ">
+          <p><strong>Auxílio Reclusão</strong></p>
+          <br>
+          <p class="p-detail"></p>
+          <br>
+          <p class="hidden-paragraph">
+          </p>
+
+        </div>
+        <div class="personalized-card2 ">
+          <p><strong>Salário Maternidade</strong></p>
+          <br>
+          <p class="p-detail"> </p>
+          <br>
+          <p class="hidden-paragraph">
+          </p>
+          <br>
+        </div>
+        <div class="personalized-card2 ">
+          <P><strong>OUTROS SERVIÇOS</strong></P>
+          <br>
+          <p class="p-detail"> Mais detalhes aqui!</p>
+          <br>
+          <p class="hidden-paragraph">- Consultoria jurídica<br>
+            - Relatórios e Pareceres jurídicos (análise processual)<br>
+            - Advocacia Extrajudicial<br>
+            - Acompanhamento de Processos<br>
+            - Acompanhamento em audiência<br>
+            - Acompanhamento em execução penal (pedido de saída temporária, progressão de regime, remição, etc)<br>
+            - Dentre outros
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Service Section -->
+
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="about container">
+      <div class="col-left">
+        <div class="about-img">
+          <img src="assets/img/foto-perfil.jpeg" alt="img">
+        </div>
+      </div>
+      <div class="col-right">
+        <h1 class="section-title">Quem cuidará do meu caso?</h1>
+        <br>
+        <br>
+        <h2>Emanuel Dantas</h2>
+        <p>- Graduado pela Universidade Federal do Rio Grande do
+          Norte.</p>
+        <p>- Pós-graduado em advocacia cível - Fundação Escola Superior do Ministério Público (FMP).</p>
+        <p>- Pós-graduado em funções Institucionais da Advocacia Geral da União - Escola Virtual da
+          Advocacia-Geral da União - EVA.</p>
+        <h2>Experiência profissional:</h2>
+        <p>Estagiário no Tribunal Regional Eleitoral do Rio Grande do Norte.</p>
+        <p>Estagiário na Defensoria Pública da União (DPU), atuando com diversas demandas afetas ao
+          direito previdenciário.</p>
+
+        <p>Bolsista na Procuradoria Jurídica da Universidade Federal do Rio Grande do Norte, com vasta
+          atuação na área de direito público.</p>
+        <p> Estagiário no Tribunal Regional do Trabalho do Rio Grande do Norte (TRT/21).</p>
+
+        <p>Estagiário de pós-graduação na Secretaria de Atos Normativos da Advocacia-Geral da União,
+          atuando na análise do controle de constitucionalidade de projetos de lei submetidos à sanção do
+          presidente da República.</p>
+        <a href="https://wa.me/?text=Ol%C3%A1%2C+gostaria+de+um+or%C3%A7amento+para+..." class="cta">Fale Conosco</a>
+      </div>
+    </div>
+  </section>
+  <!-- End About Section -->
+
+  <!-- Feedbacks Section -->
+  <section id="feedbacks">
+    <div class="feedbacks container">
+      <div class="feedbacks-header">
+        <h1 class="section-title">feedbacks</h1>
+      </div>
+      <div class="all-feedbacks">
+
+        <div class="feedbacks-item">
+          <div class="feedbacks-info">
+            <img class="img-feedback" src="assets/img/WhatsApp Image 2024-09-03 at 15.28.56.jpeg" alt="img">
+            <h2>Veranice</h2>
+            <br>
+            <br>
+            <br>
+            <a href="procedures.html" type="button" class="cta">Entre em contato agora!</a>
+          </div>
+          <div class="feedbacks-img">
+            <img src="assets/img/feedback 2.jpeg" alt="img">
+          </div>
+        </div>
+        <div class="feedbacks-item">
+          <div class="feedbacks-info">
+            <img class="img-feedback" src="assets/img/Captura de tela 2024-09-03 195219.png" alt="img">
+            <h2>Valdemar</h2>
+            <br>
+            <br>
+            <br>
+            <a href="procedures.html" type="button" class="cta">Entre em contato agora!</a>
+          </div>
+          <div class="feedbacks-img">
+            <img src="assets/img/feedback 1.jpeg" alt="img">
+          </div>
+        </div>
+        <div class="feedbacks-item">
+          <div class="feedbacks-info">
+            <img class="img-feedback" src="assets/img/WhatsApp Image 2024-09-03 at 15.28.38.jpeg" alt="img">
+            <h2>Leila</h2>
+            <br>
+            <br>
+            <br>
+            <a href="procedures.html" type="button" class="cta">Entre em contato agora!</a>
+          </div>
+          <div class="feedbacks-img">
+            <img src="assets/img/feedback 3.jpeg" alt="img">
+          </div>
+        </div>
+        <div class="feedbacks-item">
+          <div class="feedbacks-info">
+            <img class="img-feedback" src="assets/img/WhatsApp Image 2024-09-03 at 15.28.17.jpeg" alt="img">
+            <h2>Lizabele</h2>
+            <br>
+            <br>
+            <br>
+            <a href="procedures.html" type="button" class="cta">Entre em contato agora!</a>
+          </div>
+          <div class="feedbacks-img">
+            <img src="assets/img/feedback 4.jpeg" alt="img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Feedbacks Section -->
+
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand">
+        <div>
+          <div class="logo-container">
+            <img class="footer-img" src="assets/img/logo png.png" alt="Logo da empresa">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <p>Atendimento ao Cliente:</p>
+      <div class="social-icons">
+        <a href="https://wa.me/seunumero" target="_blank">
+          <img src="assets/img/whatsapp-icon.png" alt="WhatsApp"></a>
+
+        <a href="https://www.instagram.com/seuperfil" target="_blank">
+          <img src="assets/img/instagram-icon.png" alt="Instagram"></a>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <p><a>Copyright © 2024 Emanuel dantas. Todos os direitos reservados</a></p>
+    <a rel="nofollow" target="_blank" href="https://ariellisboalopes.netlify.app">Feito com <span class="heart">❤</span>
+      por Ariel Lisboa</a>
+  </section>
+  <!-- End Footer -->
+  <script src="./app.js"></script>
+</body>
+
+</html>
